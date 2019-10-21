@@ -1,0 +1,40 @@
+{
+    "title": ["全球购自营", "自营个护美妆", "自营服饰箱包", "自营数码电器"],
+    "logo": [
+
+        "//img13.360buyimg.com/cms/jfs/t6019/217/7533625822/30320/7327c3a1/597ecd8cN669999f2.jpg!q90",
+        "//img13.360buyimg.com/cms/jfs/t6019/217/7533625822/30320/7327c3a1/597ecd8cN669999f2.jpg!q90"
+    ],
+    "src": [
+        "http://img13.360buyimg.com/cms/jfs/t6019/217/7533625822/30320/7327c3a1/597ecd8cN669999f2.jpg",
+        "//img10.360buyimg.com/cms/jfs/t1/21097/7/9193/29345/5c7c8391E7ea9ed1c/9998dd0e9d8d0a1b.jpg!q90",
+        "https://img10.360buyimg.com/n1/jfs/t1/30372/28/10216/44326/5cadbfbaEc82b8490/359d2623e1f41d0c.jpg!q90",
+        "https://img10.360buyimg.com/n1/jfs/t7831/132/289431591/335838/456933a0/599123c9N494d9d9f.jpg!q90",
+        "https://img10.360buyimg.com/n1/jfs/t1/3509/8/13672/55735/5bd905f1E64a6c879/57fca54d8bc548f7.jpg!q90",
+        "https://img10.360buyimg.com/n1/jfs/t1/9293/12/15984/489708/5c74f00cEe7dd0d8d/f0f70411a7319829.jpg!q90"
+    ],
+    "desc": [
+        "飞利浦（PHILIPS）S7370/12 电动剃须刀 5向三刀头干湿两用",
+        "戴森 DYSON Supersonic HD01智能电吹风 吹风机 风筒 紫红色",
+        "戴森 DYSON V8 Absolute 家用手持无线大功率强力 除螨吸尘器 6吸头",
+        "日本进口 乐敦（ROHTO）Melano CC 药用美白精华液 20ml/支 淡斑淡痘印祛黄美白",
+        "韩国进口 VIDIVICI女神蚕丝洗面奶 120ml/支 温和补水 滋润保湿",
+        "日本 肌美精（Kracie）立体3D高浸透胶原蛋白保湿弹力面膜（玫红）4片（新版）"
+    ],
+    "price": [
+        "¥715",
+        "¥2350",
+        "￥2343",
+        "¥119",
+        "¥142",
+        "¥68"
+    ],
+    "commit": [
+        "9300+",
+        "6600+",
+        "1100+",
+        "25万+",
+        "6.4万+",
+        "14万+"
+    ]
+}

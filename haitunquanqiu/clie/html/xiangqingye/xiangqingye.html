@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/comm-head.css">
+    <link rel="stylesheet" href="../../css/xiangqingye.css">
+    <link rel="stylesheet" href="../../css/comm-foot.css">
+    <script src="../../js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <script src="../../js/head.js"></script>
+    <div class="d"></div>
+    <div class="w"></div>
+
+    <script>
+        $(() => {
+                function renderUI(data) {
+
+
+                    let html = `
+     <div class="product-intro clearfix">
+
+            <div class="preview-wrap">
+                    <div class="imgbox">
+        <div class="minImg">
+            <img src="${data[0].src}">
+            <div class="img-mask" style="display:none"></div>
+        </div>
+        <div class="maxImg" style="display:none; ">
+            <img src="${data[0].src}" style="; width: 200%; height: 200%; z-index: 100"></li>
+
+        </div>
+    </div>
+
+                   <div class="spec-list">
+                        <div id="spec-list" class="spec-items">
+                            <ul class="lh">
+                                <li class="">
+                                    <img class="img-hover" src="${data[0].src}" data-img="1" width="75" height="75"></li>
+                                <li class="">
+                                    
+                            </ul>
+                        </div>
+                    </div> 
+                    
+
+            </div>
+            <div class="itemInfo-wrap">
+                <div class="sku-name">
+                    <img src="https://img20.360buyimg.com/devfe/jfs/t3973/204/890167240/2802/f8bbb4d6/58620507N96e28422.png"> 新西兰原装进口 澳洲爱他美(Aptamil) 金装版 幼儿配方奶粉 3段(12-24个月) 900g </div>
+                <div class="news">
+                    <div class="item" id="p-ad">爱他未来，有备而来!限量抢599减60优惠券，Plus会员购澳洲爱他美白金3段，单听低至180!<a href="">马上抢!!!</a></div>
+                </div>
+                <div class="summary" id="summary-wrap">
+                    <div class="summary-price-wrap">
+                        <div class="summary-price J-summary-price">
+                            <div class="dt">
+                                价格
+                            </div>
+                            <div class="dd">
+                                <span class="p-price"> <span>￥</span> <span class="price J-p-2563427">136.00</span> </span>
+                            </div>
+                            <div class="dd hide J-plus-price">
+                                <span class="p-price plus-price">
+                                    <span class="price J-p-p-2563427">￥125.00</span> </span>
+                                <a class="plus-icon-linkwrap" href=""><img src="//img10.360buyimg.com/da/jfs/t5731/317/890792506/848/391b9a15/59224a28N48552ed2.png" class="plus-icon"></a>
+                                <span class="plus-text">PLUS会员专享价</span>
+                                <a href="" class="plus-tips">现在开通PLUS会员享限时特惠
+                                    <i class="s-arrow">&gt;&gt;</i></a>
+                            </div>
+                            <div class="user-price J-user-price hide" style="display: none;">
+                                <span class="p-price-user">
+                                                <span class="price J-p-s-2563427"></span>
+                                </span>
+                                <img src="//img14.360buyimg.com/devfe/jfs/t5728/113/4603623007/244/a159e46d/59535259N6eed475d.png" alt="sam's" class="sam-icon">
+
+                                <span class="text">您购买此商品可享受专属价</span>
+
+                                <i class="sprite-question"></i>
+                            </div>
+                        </div>
+
+                        <div id="J-summary-top" class="summary-top">
+                            <div id="summary-promotion">
+                                <div class="dt">
+                                    优惠
+                                </div>
+                                <div class="dd J-prom-wrap p-promotions-wrap">
+                                    <div class="p-promotions">
+                                        <div class="J-prom">
+                                            <div class="prom-item" data-code="16"> <em class="hl_red_bg">满送</em>
+
+                                                <em class="hl_red">满1元另加9.90元即赠热销商品，赠完即止，请在购物车点击领取</em>
+                                                <a href=""> &nbsp;&nbsp;详情 
+                                                        <s class="s-arrow">&gt;&gt;</s>                   
+                                                         </a>
+                                            </div>
+                                        </div>
+                                        </ins>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>`
+                    $(".w")[0].innerHTML = html;
+                    var imgBox = document.querySelector('.product-intro');
+                    var minBox = document.querySelector('.minImg');
+                    var minImg = document.querySelector('.minImg img');
+                    var mask = document.querySelector('.img-mask');
+                    var maxBox = document.querySelector('.maxImg');
+                    var maxImg = document.querySelector('.maxImg img');
+
+                    // 小图片盒子绑定鼠标移入事件
+
+                    minBox.onmouseenter = function() {
+                        mask.style.display = "block";
+                        maxBox.style.display = "block";
+                    }
+                    console.log($(".w .preview-wrap")[0]);
+                    minBox.onmousemove = function(ev) {
+
+
+                        // 为什么不用ev.clientY而用ev.pageY
+                        console.log(ev.clientY, imgBox.offsetTop);
+                        var moveX = ev.pageX - imgBox.offsetLeft - mask.offsetWidth / 2;
+                        var moveY = ev.pageY - imgBox.offsetTop - mask.offsetHeight / 2;
+
+                        // 遮罩可以运动的最大X方向的距离
+                        var maxX = minBox.offsetWidth - mask.offsetWidth;
+                        // 遮罩可以运动的最大Y方向的距离
+                        var maxY = minBox.offsetHeight - mask.offsetHeight;
+
+                        // 设置最大可以移动距离
+                        if (moveX >= maxX) {
+                            moveX = maxX;
+                        }
+                        if (moveY >= maxY) {
+                            moveY = maxY;
+                        }
+
+                        // 设置最小可以移动距离
+                        if (moveX <= 0) {
+                            moveX = 0;
+                        }
+
+                        if (moveY <= 0) {
+                            moveY = 0;
+                        }
+                        // 大图片可以移动的最大距离
+                        var biliX = (maxImg.offsetWidth - maxBox.offsetWidth) / maxX;
+                        // 这个比例相当于是 遮罩移动一像素，大图片需要移动的距离
+                        var biliY = (maxImg.offsetHeight - maxBox.offsetHeight) / maxY;
+
+                        // 给遮罩添加移动
+                        mask.style.top = moveY + 'px';
+                        mask.style.left = moveX + 'px';
+
+                        // 因为大图片移动的方向是相反的所以要加负号
+                        maxImg.style.top = -moveY * biliY + 'px';
+                        maxImg.style.left = -moveX * biliX + 'px';
+
+                    }
+                    minBox.onmouseleave = function() {
+                        mask.style.display = "none";
+                        maxBox.style.display = "none";
+                    }
+
+                }
+                let goods_id = window.location.search.substr(1)
+                $.ajax({
+                    type: "post",
+                    url: "../../../server/xiangqing.php",
+                    data: {
+                        id: goods_id
+                    },
+                    dataType: "json",
+                    success: (data) => renderUI(data)
+
+                });
+            })
+            // alert()
+        console.log($(".w"));
+    </script>
+
+    <script src="../../js/foot.js"></script>
+
+
+</body>
+
+</html>

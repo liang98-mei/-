@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "username": "ls",
+        "password": "123456",
+        "phone": 2147483647
+    },
+    {
+        "id": 2,
+        "username": "ddd",
+        "password": "123456",
+        "phone": 2147483647
+    },
+    {
+        "id": 3,
+        "username": "dd",
+        "password": "123456",
+        "phone": 2147483647
+    },
+    {
+        "id": 4,
+        "username": "ddee",
+        "password": "123456",
+        "phone": 2147483647
+    },
+    {
+        "id": 5,
+        "username": null,
+        "password": "123456",
+        "phone": 2147483647
+    }
+]

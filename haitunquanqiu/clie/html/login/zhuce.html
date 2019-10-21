@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/zhuce.css">
+    <script src="../../js/jquery-3.4.1.js"></script>
+    <script src="../../js/captcha-mini.js"></script>
+    <script src="../../js/zhuce.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="log-box">
+        <div class="log-box">
+            <div class="log">
+                <a href="" class="lo">
+                    <img src="../img/logo-jd.png" alt=""></a>
+
+            </div>
+            <a href="" class="log-right">
+                已有账号？<span> 请登录>></span>
+
+
+        </a>
+        </div>
+    </div>
+
+    <div class="cont-box">
+        <div class="cont">
+            <label for="usernameID">用户名</label>
+            <input type="text" placeholder="请设置您的用户名(2~6位字母区分大小写)" id="usernameID">
+            <span class="form-group__message"></span>
+
+        </div>
+        <div class="phone">
+            <label for="phoneID">手机号</label>
+            <input type="text" name="phoneNum" placeholder="请输入您的手机号" id="phoneID">
+            <span class="form-group__message "></span>
+
+        </div>
+        <div class="form-item image-code">
+
+            <label for="imageCode">验证码</label>
+            <input type="text" maxlength="6" placeholder="请输入验证码" id="imageCode">
+            <div class="image-code-box">
+                <canvas width="160" height="45" id="captcha"></canvas>
+                <div class="form-group__message">请输入图形验证码</div>
+            </div>
+        </div>
+        <div class="content">
+            <label for="msgCode">短信验证码</label>
+            <input type="text" maxlength="6" placeholder="请输入短信验证码" id="msgCode">
+            <span class="button code-sms" id="msgCodeBtn">获取短信验证码</span>
+            <!-- <div class="form-group__message"></div> -->
+            <!---->
+            <div class="form-item passwordA">
+                <label for="passwordA">设置密码</label>
+                <input type="password" maxlength="16" placeholder="密码长度6-10字符（大小写字母和数字）" id="passwordA">
+                <span class="form-group__message"></span>
+            </div>
+            <div class="form-item passwordB">
+                <label for="passwordB">确认密码</label>
+                <input type="password" maxlength="16" placeholder="密码请保持一致" id="passwordB">
+                <span class="form-group__message"></span>
+                <!---->
+            </div>
+        </div>
+
+        <div class="form-item"><span class="label"></span> <button class="button register-btn" id="registerBtn">立即注册</button></div>
+
+
+
+
+
+
+    </div>
+    <div class="w">
+        <div id="footer-2013">
+            <div class="links">
+                <a rel="nofollow" target="_blank" href="">
+                            关于我们
+                        </a> |
+                <a rel="nofollow" target="_blank" href="">
+                            联系我们
+                        </a> |
+                <a rel="nofollow" target="_blank" href="">
+                            人才招聘
+                        </a> |
+                <a rel="nofollow" target="_blank" href="">
+                            商家入驻
+                        </a> |
+                <a rel="nofollow" target="_blank" href="">
+                            广告服务
+                        </a> |
+                <a rel="nofollow" target="_blank" href="">
+                            手机京东
+                        </a> |
+                <a target="_blank" href="">
+                            友情链接
+                        </a> |
+                <a target="_blank" href="">
+                            销售联盟
+                        </a> |
+                <a href="//club.jd.com/" target="_blank">
+                            京东社区
+                        </a> |
+                <a href="//gongyi.jd.com" target="_blank">
+                            京东公益
+                        </a> |
+                <a target="_blank" href="" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+            </div>
+            <div class="copyright">
+                Copyright&nbsp;©&nbsp;2004-2019&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

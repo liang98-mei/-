@@ -1,0 +1,166 @@
+.log-box {
+    width: 990px;
+    margin: 0 auto;
+    /* background: salmon; */
+    height: 92px;
+    overflow: hidden;
+    border-bottom: 1px solid #f00;
+}
+
+.log-box .log {
+    width: 300px;
+    height: 60px;
+    float: left;
+    margin: 10px auto;
+    position: absolute;
+    /* background: firebrick; */
+}
+
+.log-box .log .lo {
+    float: left;
+}
+
+.log-box .log-right {
+    color: #999;
+    float: right;
+    /* position: relative;
+    top: -3px; */
+    margin-top: 46px;
+    font-size: 12px;
+    /* background: firebrick; */
+    font-size: 14px;
+    display: inline-block;
+}
+
+.log-box .log-right span {
+    color: red;
+}
+
+.cont-box {
+    width: 800px;
+    margin: 0 auto;
+    height: 500px;
+    /* background: royalblue; */
+    margin-top: 20px;
+}
+
+.cont-box .cont,
+.cont-box .phone,
+.cont-box .form-item,
+.cont-box .content {
+    width: 536px;
+    margin: 32px auto;
+}
+
+.form-group__message {
+    /* display: none; */
+    color: #c33;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.cont-box .cont #usernameID,
+.cont-box .phone #phoneID,
+.form-item #passwordA,
+.form-item #passwordB {
+    width: 352px;
+    height: 45px;
+    margin-left: 5px;
+    border: 1px solid #f4f4f4;
+    padding-left: 5px;
+}
+
+.cont-box .form-item {
+    position: relative;
+}
+
+.cont-box .form-item #imageCode {
+    width: 250px;
+    height: 45px;
+    margin-left: 5px;
+    border: 1px solid #f4f4f4;
+    padding-left: 5px;
+}
+
+.image-code-box {
+    width: 100px;
+    height: 45px;
+    margin-left: 5px;
+    border: 1px solid #f4f4f4;
+    position: absolute;
+    right: 121px;
+    top: 0px;
+}
+
+.cont-box .content #msgCode {
+    width: 250px;
+    height: 45px;
+    margin-left: 5px;
+    border: 1px solid #f4f4f4;
+    padding-left: 5px;
+}
+
+.cont-box .content {
+    position: relative;
+    left: -32px;
+}
+
+.cont-box .content .button {
+    border: 1px solid #f4f4f4;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
+
+.passwordA {
+    position: relative;
+    left: 14px;
+}
+
+.passwordB {
+    position: relative;
+    left: 16px;
+}
+
+#register .article .register-form .form-item .label {
+    display: inline-block;
+    line-height: 45px;
+    font-size: 12px;
+    width: 60px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.register-btn.button {
+    display: inline-block;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #32a1e8;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+
+/*  */
+
+.w {
+    position: relative;
+    top: 86px;
+    font-size: 12px;
+    text-align: center;
+    color: #ccc;
+}
+
+.w .footer-2013 .links a {
+    color: #999;
+}
